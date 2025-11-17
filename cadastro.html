@@ -1,1 +1,97 @@
-<!DOCTYPE html><html><body>Placeholder cadastro. Add full HTML.</body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mãos do Futuro | Cadastro de Voluntário</title>
+    <meta name="description" content="Cadastre-se como voluntário da ONG Mãos do Futuro e ajude na produção e entrega de próteses biônicas para crianças.">
+    <meta name="keywords" content="cadastro voluntário, ONG, prótese, crianças, voluntariado">
+    <meta name="author" content="Mãos do Futuro">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo-area">
+        <img src="imagens/logo-maos-do-futuro.png" alt="Logotipo Mãos do Futuro" class="logo">
+        <h1>Cadastro de Voluntário</h1>
+    </div>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="cadastro.html" aria-current="page">Cadastro</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Faça parte da Mãos do Futuro</h2>
+        <p>Preencha o formulário abaixo para participar das ações da ONG como voluntário, parceiro ou doador técnico.</p>
+    </section>
+
+    <form class="formulario" action="#" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="nome">Nome completo</label>
+            <input id="nome" type="text" name="nome" required>
+
+            <label for="nascimento">Data de nascimento</label>
+            <input id="nascimento" type="date" name="nascimento" required>
+
+            <label for="cpf">CPF</label>
+            <input id="cpf" type="text" name="cpf" required
+                   placeholder="000.000.000-00"
+                   pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+        </fieldset>
+
+        <fieldset>
+            <legend>Contato</legend>
+
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="email" required>
+
+            <label for="telefone">Telefone</label>
+            <input id="telefone" type="tel" name="telefone" required
+                   placeholder="(00) 00000-0000"
+                   pattern="\(\d{2}\)\s?\d{5}-\d{4}">
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <label for="cep">CEP</label>
+            <input id="cep" type="text" name="cep" required
+                   placeholder="00000-000"
+                   pattern="\d{5}-\d{3}">
+
+            <label for="cidade">Cidade</label>
+            <input id="cidade" type="text" name="cidade" required>
+
+            <label for="estado">Estado</label>
+            <input id="estado" type="text" name="estado" maxlength="2" required placeholder="UF">
+        </fieldset>
+
+        <fieldset>
+            <legend>Interesse de atuação</legend>
+
+            <label for="area-atuacao">Área em que deseja atuar</label>
+            <select id="area-atuacao" name="area-atuacao" required>
+                <option value="">Selecione</option>
+                <option value="saude">Saúde e atendimento às famílias</option>
+                <option value="engenharia">Engenharia, impressão 3D e montagem</option>
+                <option value="educacao">Educação e oficinas com crianças</option>
+                <option value="comunicacao">Comunicação e redes sociais</option>
+                <option value="administrativo">Apoio administrativo</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Enviar cadastro</button>
+    </form>
+</main>
+
+<footer>
+    <p>Mãos do Futuro © 2025 · Seus dados são usados apenas para contato com a ONG</p>
+</footer>
+</body>
+</html>
